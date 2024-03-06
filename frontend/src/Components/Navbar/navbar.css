@@ -133,4 +133,17 @@
     .login_btn{
         display: none;
     }
+
+    .nav_menus{
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+        text-decoration: none;
+    }
+    .nav_menus li a{
+        text-decoration: none;
+        color: #515151;
+    }
 }
