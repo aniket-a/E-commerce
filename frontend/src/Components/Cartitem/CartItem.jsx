@@ -7,14 +7,7 @@ const Cart = () => {
 
   return (
     <div className="cartItems">
-      <div className="cart_item_format_main">
-        <p>Products</p>
-        <p>Title</p>
-        <p>Price</p>
-        <p>Quantity</p>
-        <p>Total</p>
-        <p>Remove</p>
-      </div>
+      
 
       <hr />
 
@@ -25,12 +18,17 @@ const Cart = () => {
               return (
                 <div key={e.id}>
                   <div className="cart_item_format cart_item_format_main">
+
                     <img className="cartIcon_PtoductIcon" src={e.image} alt="" />
-                    <p>{e.name}</p>
-                    <p>$ {e.new_price}/-</p>
-                    <button className="cartitemsQuantity">{cartItems[e.id]}</button>
-                    <p>{e.new_price * cartItems[e.id]}/-</p>
-                    <img className="cart_items_remove_icon" src={removeIcone} onClick={() => removeToCart(e.id)} alt="" />
+
+                      <p>{e.name}</p>
+
+                      <p>$ {e.new_price}/-</p>
+                      <button className="cartitemsQuantity">{cartItems[e.id]}</button>
+                      <p>TOTAL:{e.new_price * cartItems[e.id]}/-</p>
+                      <img className="cart_items_remove_icon" src={removeIcone} onClick={() => removeToCart(e.id)} alt="" />
+                    
+
                   </div>
                   <hr />
                 </div>
