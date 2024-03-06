@@ -30,3 +30,9 @@
     padding-bottom: 70px;
     
 }
+
+@media (max-width:480px) {
+    .DiscriptionBox {
+            margin: 30px 170px!important;
+        }
+}
