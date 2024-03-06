@@ -8,3 +8,10 @@
     margin: 60px 170px;
     text-transform: capitalize;
 }
+
+@media (max-width:480px) {
+    .singleproducts{
+        margin: 10px 8px;
+        font-size: 10px;
+    }
+}

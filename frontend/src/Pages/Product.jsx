@@ -13,13 +13,12 @@ const Product = () => {
   const product = all_product.find((e) => e.id === Number(productId));
   
   return (
-    <div>
-        <SingleProduct product={product} />
-        <ProductDiasplay product={product} />
-        <DiscriptionBox />
-        <RelatedProduct />
+    <div className="main_producy_container">
+      <SingleProduct product={product} />
+      <ProductDiasplay product={product} />
+      <DiscriptionBox />
     </div>
-  )
+  );
 }
 
 export default Product
