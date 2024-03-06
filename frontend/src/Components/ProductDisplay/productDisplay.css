@@ -116,7 +116,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        max-width: 90%;
+        margin: 1rem auto;
     }
 
     .productDisplay_left {
@@ -142,4 +143,12 @@
         height: 80px;
         margin: 0 0.5rem;
     }
+
+    .productDisplay_right{
+        width: 90%;
+    }
+    .productDisplay_right h1{
+        font-size: 2rem
+    }
+    
 }
