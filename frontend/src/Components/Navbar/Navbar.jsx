@@ -17,6 +17,8 @@ const Navbar = () => {
           <p>SHOPPER-STORE</p>
         </div>
 
+        
+
         <ul className="nav_menu">
           <li onClick={() => setMenu("SHOP")}>
             <Link to="/">SHOP</Link> {menu === "SHOP" ? <hr /> : ""}
@@ -34,13 +36,17 @@ const Navbar = () => {
 
         <div className="nav_login_cart">
           <Link to="/login">
-            <button>Login</button>
+            <button className='login_btn'>Login</button>
           </Link>
+
           <Link to="/cart">
-            <img src={cart} alt="" />
+            <img className='cart' src={cart} alt="" />
           </Link>
+
           <div className="nav_cart_count">{getTotalCartItems()}</div>
+
         </div>
+
       </div>
     </div>
   );

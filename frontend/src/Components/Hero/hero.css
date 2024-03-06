@@ -51,3 +51,36 @@
     color: white;
     margin-top: 1rem;
 }
+
+@media (max-width:480px) {
+    .hero_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero_right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_right img{
+        width: 70%;
+    }
+
+    .hero_left{
+        width: 100%!important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero_left p{
+        font-size: 2.5rem;
+    }
+    .hero_latest_btn{
+        width: 80%;
+    }
+}

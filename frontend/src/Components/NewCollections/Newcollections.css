@@ -25,3 +25,15 @@
    margin-top: 50px;
    gap: 30px;
 }
+
+@media (max-width:480px) {
+    .new-collections h1{
+        font-size: 2rem;
+    }
+    .collections{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
